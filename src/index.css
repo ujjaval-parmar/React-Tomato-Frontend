@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+
+@media (max-width:920px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+
+body{
+    min-height: 100vh;
+}
+
+.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.scrollbar-none::-webkit-scrollbar{
+    display: none;
+}
+
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.mySwiper .swiper-button-prev{
+    margin-right: 15px;
+}
+
+.mySwiper .swiper-button-next{
+    margin-left: 15px;
+}
+
+
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after
+{
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+@media (max-width:800px) {
+
+    .mySwiper .swiper-button-prev,
+    .mySwiper .swiper-button-next {
+       display: none;
+    }
+
+
+}
+
+
+/* @keyframes fadeIn {
+    
+    0%{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+
+} */
